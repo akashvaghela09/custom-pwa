@@ -1,0 +1,153 @@
+.wrapper {
+    /* border: 1px solid red; */
+    height: calc(100vh - 150px);
+    overflow: auto;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.addBtn {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    background-color: white;
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 7px -3px rgba(0,0,0,1);
+    -webkit-box-shadow: 1px 1px 7px -3px rgba(0,0,0,1);
+    -moz-box-shadow: 1px 1px 7px -3px rgba(0,0,0,1);
+    cursor: pointer;
+}
+
+.tableRow {
+    display: flex;
+    width: 80%;
+    background-color: #ececec;
+    border: 2px solid #dfe6e9;
+    margin: 2px 0px;
+    padding: 10px;
+    position: relative;
+}
+
+.tableRow:hover {
+    border: 2px solid rgb(141, 141, 141);
+}
+
+.tableCol, .tableCol2{
+    width: 27%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.tableBtn {
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.tableBtn:hover {
+    background-color: rgb(202, 202, 202);
+}
+
+.tableBtnDiv {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.modalWrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.342);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalContent {
+    background-color: white;
+    width: fit-content;
+    height: fit-content;
+    max-width: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    padding-bottom: 40px;
+    position: relative;
+}
+
+.inputField {
+    /* border: 1px solid red; */
+    padding: 10px;
+    margin: 5px 10px;
+    font-size: 20px;
+}
+
+.submitBtn {
+    background-color: #3498db;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.closeBtn:hover {
+    opacity: 1;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .wrapper {
+        padding: 20px 10px;
+        height: calc(100vh - 180px);
+        /* border: 1px solid red; */
+        padding-bottom: 100px;
+    }
+    
+    .tableRow {
+        width: 95%;
+    }
+    
+    .tableCol, .tableCol2 {
+        font-size: 15px;
+        width: 40%;
+    }
+    
+    .tableCol2 {
+        width: 20%;
+    }
+    
+    .tableBtn {
+        font-size: 30px;
+        padding: 2px;
+        margin: 0px 10px;
+    }
+    
+    .tableBtnDiv {
+        width: 20%;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        /* border: 1px solid red; */
+    }
+}
