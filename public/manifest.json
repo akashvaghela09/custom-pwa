@@ -1,0 +1,16 @@
+{
+  "short_name": "Custom PWA",
+  "name": "Custom Progressive Web App",
+  "icons": [
+    
+    {
+      "src": "https://www.scambs.gov.uk/media/12178/jobs.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#2E3AA1",
+  "background_color": "#3E4EB8"
+}
